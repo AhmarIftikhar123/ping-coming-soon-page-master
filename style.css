@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@1,9..40,200&family=Josefin+Sans:wght@200&family=Kumbh+Sans:wght@300&family=Libre+Franklin:wght@200&family=Manrope:wght@200&family=Poppins:wght@200&display=swap");
+
+:root {
+  --Blue: hsl(223, 87%, 63%);
+
+  --Pale-Blue: hsl(223, 64%, 63%);
+
+  --Light-Red: hsl(354, 100%, 66%);
+
+  --Gray: hsl(0, 0%, 59%);
+
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Libre Franklin", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(330deg, #f0f0f0, #333);
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+
+  padding-bottom: 0;
+}
+
+.card_container {
+  width: 70%;
+  overflow: hidden;
+}
+.logo img {
+  width: 8%;
+}
+
+form h2 {
+  margin-block: 1.7rem 0.5rem;
+  font-weight: lighter;
+  font-size: 2.2rem;
+  color: var(--Gray);
+}
+
+form h2 strong {
+  font-weight: bold;
+  color: var(--Very-Dark-Blue);
+}
+form p {
+  color: var(--Gray);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.user_input_box input {
+  padding: 0.8rem;
+  columns: var(--Gray);
+  border: none;
+  border: 1px solid var(--Gray);
+  border-radius: 2rem;
+  opacity: 0.2;
+  width: 40%;
+  font-size: 0.9rem;
+  outline: none;
+}
+#submit_btn {
+  width: 17%;
+  height: 3em;
+  border: 1px solid var(--Gray);
+  border-radius: 2rem;
+  background-color: var(--Blue);
+  color: #fff;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+#submit_btn:hover {
+  background-color: var(--Pale-Blue);
+}
+
+small {
+  display: block;
+  text-align: left;
+  margin-left: 22.5%;
+  color: var(--Light-Red);
+}
+
+.ping_img {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block: 2rem;
+}
+.ping_img img {
+  width: 45%;
+}
+
+.social_links button {
+  margin: 0.8rem;
+  padding: 0.3em;
+  border: none;
+  background-color: var(--Gray);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.social_links button:hover {
+  background-color: var(--Blue);
+}
+
+footer {
+  margin-top: 1rem;
+  color: var(--Gray);
+}
+
+@media (max-width: 375px) {
+  .card {
+    margin-top: 50%;
+  }
+  .logo img {
+    width: 25%;
+  }
+
+  form h2 {
+    font-size: 1.3rem;
+    display: block;
+    line-height: 1.5rem;
+  }
+
+  form p {
+    margin-bottom: 1rem;
+  }
+  .user_input_box input {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 0.7rem;
+    padding: 0.6rem;
+  }
+  #submit_btn {
+    position: absolute;
+  }
+  #submit_btn {
+    position: absolute;
+    left: 21%;
+    width: 58%;
+    font-size: 0.7rem;
+    padding: 0.6rem;
+    /* top: 51.5%; */
+    top: 67%;
+  }
+  small {
+    font-size: 0.7rem;
+    margin-left: 0.5em;
+  }
+
+  .ping_img{
+    margin-top: 33%;
+  }
+  .ping_img img {
+    width: 80%;
+  }
+
+  .social_links button {
+    margin-inline: 0.4rem;
+    margin-block: 10%;
+    padding: 0;
+    background-color: var(--Gray);
+    border-radius: 50%;
+  }
+  footer {
+    margin-top: 1rem;
+    font-size: .9rem;
+  }
+
+}
